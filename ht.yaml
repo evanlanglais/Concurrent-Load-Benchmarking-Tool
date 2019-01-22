@@ -1,0 +1,21 @@
+site: HuskyTHON API AWS
+base-url: http://tapi.evanlanglais.com/api/huskython
+endpoints:
+  - events:
+    url: events.php
+  - leaderboards:
+    url: leaderboards.php
+  - socials:
+    url: socials.php
+  - participant:
+    url: participant.php
+    variables:
+      - id:
+        type: GET
+        values: [459064,482310,484336,524703,459287,458859,492758,459702,505382,473249]
+  - team:
+    url: team.php
+    variables:
+      - id:
+        type: GET
+        values: [32457,32434,32479,32592,33028,32475,33657,33974,33739,32470]

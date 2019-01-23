@@ -1,21 +1,30 @@
 site: HuskyTHON API AWS
-base-url: http://tapi.evanlanglais.com/api/huskython
+base-url: http://tapi.evanlanglais.com/api/huskython/
+weight-total: 100
 endpoints:
   - events:
     url: events.php
+    type: GET
+    weight: 25
   - leaderboards:
     url: leaderboards.php
+    type: GET
+    weight: 20
   - socials:
     url: socials.php
+    type: GET
+    weight: 25
   - participant:
     url: participant.php
+    type: GET
+    weight: 15
     variables:
-      - id:
-        type: GET
+      - key: id
         values: [459064,482310,484336,524703,459287,458859,492758,459702,505382,473249]
   - team:
     url: team.php
+    type: GET
+    weight: 15
     variables:
-      - id:
-        type: GET
+      - key: id
         values: [32457,32434,32479,32592,33028,32475,33657,33974,33739,32470]
